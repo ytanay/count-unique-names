@@ -12,3 +12,6 @@ which returns the number of unique names detected
 
 ## Testing
 Install mocha with `npm i -g mocha` and run `npm test`
+
+## Notes
+Thanks to Dan Connor for the nickname list - see original [here](https://github.com/onyxrev/common_nickname_csv).
