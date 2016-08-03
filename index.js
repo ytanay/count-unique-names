@@ -11,7 +11,7 @@ module.exports = function countUniqueNames(billFirstName, billLastName, shipFirs
     parseName(billNameOnCard)
   ];
   
-  applyMiddleName(names); // Apply common middle names, if any such one exists.
+  applyMiddleNames(names); // Apply matching middle names, if any such one exists.
 
   var uniqueCount = uniqueNames(names).length;
 
@@ -53,7 +53,7 @@ function replaceNickname(name){
 
 
 // Given a list of names, attempts to match the middle names contained in them
-function applyMiddleName(names){
+function applyMiddleNames(names){
   
   // Michele and Michele F. are likely the same person, however Michele F. and Michele G. are not
   // If we have *one and only* unique non-empty middle name, we'll give it to all the other names as well
@@ -67,7 +67,7 @@ function applyMiddleName(names){
   
   if(middleNames.size === 1){ // If there is one non-blank middle name
     var middleName = middleNames.values().next().value;
-    names.forEach(function(name){
+    names.forEach(function(name){ // Give it to everyone
       name.middleName = middleName;
     })
   }
