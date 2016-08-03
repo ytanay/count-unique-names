@@ -6,7 +6,7 @@ Start with `npm i`.
 ## Usage
 Using `require('count-unique-names')` will give you
 ```javascript
-function countUniqueNames(billFirstName,billLastName,shipFirstName,shipLastName,billNameOnCard)
+function countUniqueNames(billFirstName, billLastName, shipFirstName, shipLastName, billNameOnCard)
 ``` 
 which returns the number of unique names detected
 
