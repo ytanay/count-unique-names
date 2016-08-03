@@ -1,0 +1,21 @@
+{
+  "name": "forter-challenge2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "^4.14.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Yotam Tanay <yotam@paticon.com>",
+  "license": "MIT"
+}
